@@ -1,0 +1,54 @@
+---
+layout: default
+section: jchendy
+---
+
+<script>
+    $( document ).ready(function() {
+        $("html").css("background-image", "url('../img/agricola.jpg')");
+        $("#sub-label").text("Games!");
+    });
+</script>
+
+<div class="row-fluid">
+    <div class="span8">
+
+    </div>
+
+    <div class="span4">
+        <div class="signup">
+            <h2 style="margin-top: 0px;">Find players</h2>
+            <form style="margin-bottom: 10px;">
+                <label style="font-size: 125%;">I want to play:</label>
+                <label class="checkbox " title="Settlers of Catan, Agricola, Carcassone, ...">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Euro strategy games 
+                </label>              
+                <label class="checkbox " title="Chess, Go, ...">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                    Classic strategy games
+                </label>
+                <label class="checkbox " title="Dungeons and Dragons, ...">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Role-playing games
+                </label>              
+                <label class="checkbox " title="Apples to Apples, Cards Against Humanity, Scattergories, ...">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                    Party games
+                </label>              
+                <label class="checkbox " title="Hearts, Poker, Euchre, ...">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                    Card games
+                </label>  
+
+                <br />
+
+                <label style="font-size: 125%;">Near:</label>
+                <input type="text" placeholder="ZIP/postal code">
+
+                <br /><br />
+                <a class="btn" href="#">Find players</a> 
+            </form>
+        </div>
+    </div>
+</div>

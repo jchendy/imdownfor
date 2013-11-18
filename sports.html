@@ -1,0 +1,54 @@
+---
+layout: default
+section: jchendy
+---
+
+<script>
+    $( document ).ready(function() {
+    $("html").css("background-image", "url('../img/softball.jpg')");
+    $("#sub-label").text("Sports!");
+});
+</script>
+
+<div class="row-fluid">
+    <div class="span8">
+
+    </div>
+
+    <div class="span4">
+        <div class="signup">
+            <h2 style="margin-top: 0px;">Find players</h2>
+            <form style="margin-bottom: 10px;">
+                <label style="font-size: 125%;">I want to play:</label>
+                <label class="checkbox " title="">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Softball
+                </label>              
+                <label class="checkbox " title="">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                    Soccer
+                </label>
+                <label class="checkbox " title="">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    American football
+                </label>              
+                <label class="checkbox " title="">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                    Kickball
+                </label>              
+                <label class="checkbox " title="">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                    Basketball
+                </label>  
+
+                <br />
+
+                <label style="font-size: 125%;">Near:</label>
+                <input type="text" placeholder="ZIP/postal code">
+
+                <br /><br />
+                <a class="btn" href="#">Find players</a> 
+            </form>
+        </div>
+    </div>
+</div>
