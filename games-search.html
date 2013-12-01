@@ -1,0 +1,93 @@
+---
+layout: default
+section: jchendy
+---
+
+<script>
+    $( document ).ready(function() {
+        $("html").css("background-image", "url('../img/agricola.jpg')");
+        $("#sub-label").text("Games!");
+    });
+</script>
+
+{% include register.html %}
+
+<div class="row-fluid" style="-webkit-filter: blur(0px);">
+    <div class="span8">
+        <div class="signup">
+            <h2 style="margin-top: 0px;">6 players near 11201</h2>
+            
+            {% include game-result.html name="Abdul" image="img/profile/1.jpg" tagline="I love Settlers!" %}
+            
+            {% include game-result.html name="Betty" image="img/profile/2.jpg" tagline="New to the city" %}
+            
+            {% include game-result.html name="Carlos" image="img/profile/3.jpg" tagline="Want to learn new games" %}
+            
+            {% include game-result.html name="Dina" image="img/profile/4.jpg" tagline="I own over 300 games" %}
+            
+            {% include game-result.html name="Edgar" image="img/profile/1.jpg" tagline="" %}
+            
+            {% include game-result.html name="Fiona" image="img/profile/2.jpg" tagline="" %}
+            
+        </div>
+    </div>
+
+    <div class="span4">
+        <div class="signup">
+            <h2 style="margin-top: 0px;">Refine search</h2>
+            
+            <form style="margin-bottom: 10px;">
+                <label style="font-size: 125%;">Game:</label>
+                <input type="text" placeholder="Name of game">
+                
+                <br /><br />
+                
+                <label style="font-size: 125%;">Venue:</label>
+                <label class="checkbox " title="">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Their place
+                </label>                              
+                <label class="checkbox " title="">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    My place
+                </label>       
+                <label class="checkbox " title="">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Public location
+                </label>   
+                
+                <br />
+                
+                <label style="font-size: 125%;">Distance within:</label>
+                <input type="text" placeholder="Number of miles">
+                
+                <br /><br />
+                
+                <label style="font-size: 125%;">Game type:</label>
+                <label class="checkbox " title="Settlers of Catan, Agricola, Carcassone, ...">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Euro strategy games 
+                </label>              
+                <label class="checkbox " title="Chess, Go, ...">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                    Classic strategy games
+                </label>
+                <label class="checkbox " title="Dungeons and Dragons, ...">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Role-playing games
+                </label>              
+                <label class="checkbox " title="Apples to Apples, Cards Against Humanity, Scattergories, ...">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                    Party games
+                </label>              
+                <label class="checkbox " title="Hearts, Poker, Euchre, ...">
+                    <input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                    Card games
+                </label>                  
+
+            </form>
+        </div>
+        
+
+    </div>
+</div>

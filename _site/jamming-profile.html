@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://getbootstrap.com/2.3.2/examples/hero.html -->
+<html lang="en" id="home-html"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>I'm down for...</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Le styles -->
+        <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="../css/wwtp.css" rel="stylesheet">
+        <link href="../lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+        <script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>    
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../assets/js/html5shiv.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div id="not-footer">
+
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="brand wwtp-brand" href="index.html">I'm down for...</a>
+                        <ul class="nav">
+                            <li class="dropdown">
+                                <a href="#"  class="dropdown-toggle brand sub-brand" data-toggle="dropdown"><span id="sub-label">Games!</span> <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="games.html">Games!</a></li>
+                                    <li><a href="sports.html">Sports!</a></li>
+                                    <li><a href="jamming.html">Jamming!</a></li>
+                                </ul>
+                            </li>            
+                        </ul>
+                        <a class="navbar-text pull-right" href="#">login</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div id="main">
+                        <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Send message to Abdul</h4>
+      </div>
+      <div class="modal-body">
+        Talk to Abdul about games or jamming:
+        <br />
+        <textarea rows="10" style="width: 95%;">
+Hey Abdul,
+        
+I see we've got some similar interests. Do you want to get together and play some games or jam?
+
+Peace,
+Jeff
+        </textarea>
+        
+        
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Send</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="row-fluid" style="-webkit-filter: blur(0px);">
+    <div class="span4">
+        <div class="signup">
+            <span class="pull-left"> <h2 style="margin-top: 0px;">Abdul</h2> </span>
+            <a class="btn pull-right" style="margin-top: 5px;" onclick="$('#messageModal').modal()">Send message</a> 
+            
+            <img id="profile-pic" src="" style="width: 100%; height: auto;">
+            
+            <br /><br />
+            <b>About: </b><br />
+            I live in Brooklyn and work in Manhattan. I like to play games and music. I can meet anywhere in New York.
+            
+            <br /><br />
+            <b>Zip codes: </b><br />
+            11201 - Brooklyn, NY<br />
+            10013 - New York, NY<br />
+        </div>        
+    </div>    
+    
+    <div class="span8">
+        <div class="signup">
+            <h2 style="margin-top: 0px;">Abdul is down for...</h2> 
+            
+              <ul class="nav nav-tabs">
+                <li id="games-tab"><a href="games-profile.html">Games</a></li>
+                <li id="jamming-tab"><a href="jamming-profile.html">Jamming</a></li>
+              </ul>
+            
+        <script>
+    $( document ).ready(function() {
+        $("html").css("background-image", "url('../img/guitar-dude.jpg')");
+        $("#jamming-tab").addClass("active");
+        $("#profile-pic").attr("src", "img/jam-profile/1.jpg")
+    });
+</script>
+
+<b>Plays: </b> Guitar <br />
+<b>Likes: </b> Rock, blues, metal <br />
+<b>Looking for:</b> Bass, drums, vocals, keyboard <br />
+<b>Favorite bands: </b> Beatles, AC/DC, Hendrix<br />
+<b>Venues:</b> Your place, public location <br />
+            
+        </div>
+    </div>
+
+
+</div>
+
+                </div>
+
+            </div> <!-- /container -->
+
+        </div>
+
+        <div id="footer">
+            <div class="container-fluid">
+                <span class="signup">
+                    <a href="about.html"> About</a> | <a href="#">Help</a>
+                </span>
+            </div>
+        </div>   
+        <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    </body></html>

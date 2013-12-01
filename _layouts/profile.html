@@ -1,0 +1,42 @@
+---
+layout: default
+section: jchendy
+---
+
+{% include message.html %}
+
+<div class="row-fluid" style="-webkit-filter: blur(0px);">
+    <div class="span4">
+        <div class="signup">
+            <span class="pull-left"> <h2 style="margin-top: 0px;">Abdul</h2> </span>
+            <a class="btn pull-right" style="margin-top: 5px;" onclick="$('#messageModal').modal()">Send message</a> 
+            
+            <img id="profile-pic" src="" style="width: 100%; height: auto;">
+            
+            <br /><br />
+            <b>About: </b><br />
+            I live in Brooklyn and work in Manhattan. I like to play games and music. I can meet anywhere in New York.
+            
+            <br /><br />
+            <b>Zip codes: </b><br />
+            11201 - Brooklyn, NY<br />
+            10013 - New York, NY<br />
+        </div>        
+    </div>    
+    
+    <div class="span8">
+        <div class="signup">
+            <h2 style="margin-top: 0px;">Abdul is down for...</h2> 
+            
+              <ul class="nav nav-tabs">
+                <li id="games-tab"><a href="games-profile.html">Games</a></li>
+                <li id="jamming-tab"><a href="jamming-profile.html">Jamming</a></li>
+              </ul>
+            
+        {{content}}
+            
+        </div>
+    </div>
+
+
+</div>

@@ -4,8 +4,9 @@ body {
 }
 
 #home-html {
+    background-color: gray;
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: repeat;
     background-position:center top; 
 }
 
@@ -30,6 +31,14 @@ html {
     border-radius: 5px;
     color: white;
     padding: 5px;
+}
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+    background-color: transparent;
+    border-bottom-color: black;
+    color: red;
 }
 
 
@@ -61,6 +70,15 @@ html {
 
 .sub-brand {
    color: red !important;
+}
+
+.result {
+    padding-bottom: 15px;
+}
+
+.profile-pic {
+    width: 150px; 
+    height: 150px;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */
